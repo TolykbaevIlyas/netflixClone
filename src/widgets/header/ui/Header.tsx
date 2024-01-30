@@ -10,7 +10,7 @@ const Header = () => {
     <header className='p-10'>
       <div>
         <OpenLeftPanel open={open} onClick={()=>isOpen(!open)}/>
-        {open ? <LeftPanel/> : null}
+        {open ? <LeftPanel open={open} onClick={()=>isOpen(!open)}/> : null}
       </div>
       <nav className='flex justify-center'>
         <Link className='ml-5' href="/">Home</Link>
