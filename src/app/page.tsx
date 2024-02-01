@@ -5,7 +5,7 @@ import img2 from './assets/dom2.jpg'
 
 export default function Home() {
   const imgs = [
-    {id:1,src:img},{id:2,src:img2}
+    {id:1,src:img,text: "Hello1"},{id:2,src:img2,text: "Hello2"},{id:3,src:img,text: "Hello3"}
   ]
   return (
     <main className="">
