@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import styles from "../styles/index.module.scss";
+import styles from "../assets/index.module.scss";
 import React from "react";
 import Link from "next/link";
 import { TSlider } from "../types";
