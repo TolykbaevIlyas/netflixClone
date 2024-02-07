@@ -13,9 +13,9 @@ const Header = () => {
         {open ? <LeftPanel open={open} onClick={()=>isOpen(!open)}/> : null}
       </div>
       <nav className='flex justify-center'>
-        <Link className='ml-5' href="/">Home</Link>
-        <Link className='ml-5' href="/Category">Category</Link>
-        <Link className='ml-5' href="/AboutUs">About Us</Link>
+        <Link className='ml-5 hover:text-zinc-400 duration-150' href="/">Home</Link>
+        <Link className='ml-5 hover:text-zinc-400 duration-150' href="/Category">Category</Link>
+        <Link className='ml-5 hover:text-zinc-400 duration-150' href="/AboutUs">About Us</Link>
       </nav>
     </header>
   )
