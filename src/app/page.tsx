@@ -6,7 +6,7 @@ import { Slider } from '@/features/Slider'
 
 export default function Home() {
   const imgs = [
-    {id:1,image:img,title: ""},{id:2,image:img2,title: ""},{id:3,image:img,title: ""}
+    {id:1,image:img,title: "Forest", description:"About smt"},{id:2,image:img2,title: "Home", description:"About smb"},{id:3,image:img,title: "Snow",description:"About snow"}
   ]
   return (
     <main className="">

@@ -34,6 +34,7 @@ const Slider = ({ slides }: ISlider) => {
             id={data.id}
             title={data.title}
             image={data.image}
+            description={data.description}
           />
         ))}
       </div>

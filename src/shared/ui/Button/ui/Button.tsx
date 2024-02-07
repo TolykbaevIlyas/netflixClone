@@ -9,7 +9,7 @@ interface IButton{
 
 const Button = ({onClick,type,className,children}:IButton) => {
   return (
-    <button type={type} onClick={onClick} className={className}>
+    <button type={type} onClick={onClick} className={`${className} px-5 bg-orange-400/70 rounded-lg hover:bg-orange-400`}>
         {children}
     </button>
   )

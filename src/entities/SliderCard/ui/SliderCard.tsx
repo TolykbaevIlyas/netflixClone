@@ -5,15 +5,17 @@ import styles from "../assets/index.module.scss";
 import React from "react";
 import Link from "next/link";
 import { TSlider } from "../types";
+import { Button } from "@/shared/ui/Button";
 
 
-const SliderCard = ({ id, title, image }: TSlider) => {
+const SliderCard = ({ id, title, image,description }: TSlider) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <Link
       href={`/anime/${id}`}
       className={`relative overflow-hidden rounded-2xl `}
+      
     >
       <div
         className={` ${isHovered ? styles.hovered : ""}`}
@@ -25,8 +27,11 @@ const SliderCard = ({ id, title, image }: TSlider) => {
           <div className={styles.overlay}></div>
         </div>
         <div className={styles.textContainer}>
-          {title ? <h1 className={`mt-8 `}>{title}</h1> : ""}
-          {isHovered && <div className={styles.watchNow}>Watch Now</div>}
+          {isHovered && <div className={`${styles.watchNow} gap-5`}>
+            <h3>{title}</h3>
+            <p className="text-base">{description}</p>
+            <Button>More</Button>
+            </div>}
         </div>
       </div>
     </Link>
