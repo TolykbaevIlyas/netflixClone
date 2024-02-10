@@ -3,6 +3,7 @@ import Image from 'next/image'
 import img from './assets/dom.jpg'
 import img2 from './assets/dom2.jpg'
 import { Slider } from '@/features/Slider'
+import { Catalog } from '@/widgets/Catalog'
 
 export default function Home() {
   const imgs = [
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <main className="">
         <Slider slides={imgs}/>
+        <Catalog/>
         HomePage
     </main>
   )
